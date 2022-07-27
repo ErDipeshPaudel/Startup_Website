@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:ital,wght@0,400;1,200&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pagination</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1;
+      }
+
+      .num-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        gap: 10px;
+      }
+
+      .btn {
+        border: 1px solid rgb(3 3 51);
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        background: none;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: rgb(3 3 51);
+      }
+
+      .btn:hover .btn-icon {
+        stroke: #fff;
+      }
+
+      .at:link,
+      .at:visited {
+        color: rgb(3 3 51);
+        text-decoration: none;
+        font-size: 18px;
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .at:hover,
+      .at:active {
+        background-color: rgb(3 3 51);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="num-btn">
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <a href="#" class="at">1</a>
+      <a href="#" class="at">2</a>
+      <a href="#" class="at">3</a>
+      <a href="#" class="at">4</a>
+      <a href="#" class="at">5</a>
+      <a href="#" class="at">6</a>
+      <span>...</span>
+      <a href="#" class="at">36</a>
+
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:ital,wght@0,400;1,200&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Accordion</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1;
+      }
+
+      .accordion {
+        width: 900px;
+        margin: 100px auto;
+      }
+
+      .item {
+        box-shadow: 0 0 32px 0 rgb(0, 0, 0, 0.2);
+        padding: 24px;
+
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 32px;
+        align-items: center;
+        border-top: 4px solid rgb(3, 3, 63);
+      }
+
+      .number,
+      .text {
+        font-size: 24px;
+        font-weight: 700;
+        color: rgb(4, 4, 61);
+      }
+
+      /* .number {
+        color: gray;
+      } */
+
+      .icon {
+        height: 24px;
+        width: 24px;
+        stroke: rgb(3, 3, 58);
+      }
+
+      .hidden {
+        grid-column: 2;
+      }
+
+      .hidden-para {
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .hidden-list {
+        height: 1.2;
+        color: rgb(88, 86, 86);
+        padding-left: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="accordion">
+      <div class="item">
+        <div class="number">01</div>
+        <div class="text">How are these courses designed?</div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="hidden">
+          <p class="hidden-para">
+            we assembled this course from through reserarch of modern real world
+            requirement collecting pieces from.... Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Cupiditate facilis cumque natus
+            nesciunt atque accusamus ea vero animi eius dicta ipsum quae ipsam
+            voluptates quisquam rem, magnam adipisci earum unde corporis. Porro,
+            excepturi eius, reprehenderit facere ex sapiente nemo minima,
+            asperiores iste maxime iure nam consequuntur totam. Iure, eos
+            quaerat!
+          </p>
+          <ul class="hidden-list">
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+              distinctio?
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero?
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="number">02</div>
+        <div class="text">How long does it takes to complete all course?</div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="hidden">
+          <p class="hidden-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            facilis cumque natus nesciunt atque accusamus ea vero animi eius
+            dicta ipsum quae ipsam voluptates quisquam rem, magnam adipisci
+            earum unde corporis. Porro, excepturi eius, reprehenderit facere ex
+            sapiente nemo minima, asperiores iste maxime iure nam consequuntur
+            totam. Iure, eos quaerat!
+          </p>
+          <ul class="hidden-list">
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+              distinctio?
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero?
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="number">03</div>
+        <div class="text">
+          Are study time flexible (Morning, Afternoon, Evening shift)?
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="hidden">
+          <p class="hidden-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            facilis cumque natus nesciunt atque accusamus ea vero animi eius
+            dicta ipsum quae ipsam voluptates quisquam rem, magnam adipisci
+            earum unde corporis. Porro, excepturi eius, reprehenderit facere ex
+            sapiente nemo minima, asperiores iste maxime iure nam consequuntur
+            totam. Iure, eos quaerat!
+          </p>
+          <ul class="hidden-list">
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+              distinctio?
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero?
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

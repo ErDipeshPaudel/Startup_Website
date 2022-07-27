@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:ital,wght@0,400;1,200&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Course Table</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      table {
+        width: 900px;
+        margin-top: 100px;
+        /* border: 1px solid rgb(3, 3, 63); */
+        border-collapse: collapse;
+        font-size: 18px;
+        box-shadow: 0 12px 24px 0 rgb(3, 3, 63);
+      }
+
+      td,
+      th {
+        /* border: 1px solid rgb(3, 3, 63); */
+        text-align: left;
+        padding: 16px 24px;
+      }
+
+      thead th {
+        background-color: rgb(3, 3, 63);
+        font-size: 20px;
+        color: #fff;
+        width: 25%;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: rgb(241, 237, 237);
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: rgb(224, 221, 221);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-table">
+      <table>
+        <thead>
+          <tr class="heading">
+            <th>Course</th>
+            <th>Course Duration</th>
+            <th>Delivary Format</th>
+            <th>Takeaway</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Mobile Application Development</th>
+            <td>6 months</td>
+            <td>On Class + Online</td>
+            <td>Android & IOS App Developer</td>
+          </tr>
+          <tr>
+            <th>Web Development</th>
+            <td>6 months</td>
+            <td>On Class + Online</td>
+            <td>Website & Web App Developer</td>
+          </tr>
+          <tr>
+            <th>Financial Course</th>
+            <td>6 months</td>
+            <td>Class meeting</td>
+            <td>Investment & Money Management Skills</td>
+          </tr>
+          <tr>
+            <th>Personal Development</th>
+            <td>6 months</td>
+            <td>Class meeting</td>
+            <td>Leadership,Polished Personality, Network</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
