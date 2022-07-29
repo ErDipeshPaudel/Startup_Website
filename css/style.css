@@ -1016,6 +1016,9 @@ section {
   .nav-open .nav-btn-icon[name="menu-outline"] {
     display: block;
   }
+  .nav-btn {
+    background-color: #87ceeb;
+  }
 
   .main-nav-list {
     flex-direction: column;
